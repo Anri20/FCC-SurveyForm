@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 id="title">Catlovers Survey</h1>
+    <p id="description">This is survey form for CatLovers</p>
+    <form action="POST" id="survey-form">
+        <div class="form-group">
+            <label for="name" id="name-label">Name</label>
+            <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+            <label for="email" id="email-label">Email</label>
+            <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+            <label for="number" id="number-label">Age (optional)</label>
+            <input type="number" name="number" id="number" class="form-control" min="10" max="99" placeholder="Age">
+        </div>
+        <div class="form-group">
+            <p>Which option best describe your current role?</p>
+            <select name="role" id="dropdown" class="form-control">
+                <option disabled selected hidden value=""></option>
+                <option value="student">Student</option>
+                <option value="job">Full time job</option>
+                <option value="preferNo">Prefer not to say</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <p>Would you recommend having cat as a pet to a friend?</p>
+            <label><input type="radio" name="cat-recommend" id="definitely" class="input-radio" value="definitely">Definitely</label>
+            <label><input type="radio" name="cat-recommend" id="maybe" class="input-radio" value="maybe">Maybe</label>
+            <label><input type="radio" name="cat-recommend" id="no" class="input-radio" value="no">No</label>
+        </div>
+        <div class="form-group">
+            <p>What is your favorite feature of a cat?</p>
+            <label><input type="checkbox" name="cat-feature" id="face" class="input-checkbox" value="face">Face</label>
+            <label><input type="checkbox" name="cat-feature" id="attitude" class="input-checkbox" value="attitude">Attitude</label>
+            <label><input type="checkbox" name="cat-feature" id="whiskers" class="input-checkbox" value="whiskers">Whiskers</label>
+            <label><input type="checkbox" name="cat-feature" id="eyes" class="input-checkbox" value="eyes">Eyes</label>
+            <label><input type="checkbox" name="cat-feature" id="fur" class="input-checkbox" value="fur">Fur</label>
+        </div>
+        <div class="form-group">
+            <p>Anything to share?</p>
+            <textarea name="comment" id="comment" class="input-textarea" rows="5" placeholder="Enter your comment here..."></textarea>
+        </div>
+        <div class="form-group">
+            <input id="submit" type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+
+</html>
